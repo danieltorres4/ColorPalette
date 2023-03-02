@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		BD87383C29B101EC00DDCAF3 /* ColorPaletteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD87383B29B101EC00DDCAF3 /* ColorPaletteApp.swift */; };
-		BD87383E29B101EC00DDCAF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD87383D29B101EC00DDCAF3 /* ContentView.swift */; };
+		BD87383E29B101EC00DDCAF3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD87383D29B101EC00DDCAF3 /* MainView.swift */; };
 		BD87384029B101EF00DDCAF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD87383F29B101EF00DDCAF3 /* Assets.xcassets */; };
 		BD87384329B101EF00DDCAF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD87384229B101EF00DDCAF3 /* Preview Assets.xcassets */; };
+		BD87384C29B102B400DDCAF3 /* ColorPaletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD87384B29B102B400DDCAF3 /* ColorPaletteViewModel.swift */; };
+		BD87384E29B1039E00DDCAF3 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD87384D29B1039E00DDCAF3 /* ColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD87383829B101EC00DDCAF3 /* ColorPalette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPalette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD87383B29B101EC00DDCAF3 /* ColorPaletteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteApp.swift; sourceTree = "<group>"; };
-		BD87383D29B101EC00DDCAF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD87383D29B101EC00DDCAF3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BD87383F29B101EF00DDCAF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD87384229B101EF00DDCAF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD87384B29B102B400DDCAF3 /* ColorPaletteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteViewModel.swift; sourceTree = "<group>"; };
+		BD87384D29B1039E00DDCAF3 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		BD87383A29B101EC00DDCAF3 /* ColorPalette */ = {
 			isa = PBXGroup;
 			children = (
+				BD87384A29B1024200DDCAF3 /* ViewModels */,
+				BD87384929B1023B00DDCAF3 /* Views */,
 				BD87383B29B101EC00DDCAF3 /* ColorPaletteApp.swift */,
-				BD87383D29B101EC00DDCAF3 /* ContentView.swift */,
 				BD87383F29B101EF00DDCAF3 /* Assets.xcassets */,
 				BD87384129B101EF00DDCAF3 /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				BD87384229B101EF00DDCAF3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD87384929B1023B00DDCAF3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD87383D29B101EC00DDCAF3 /* MainView.swift */,
+				BD87384D29B1039E00DDCAF3 /* ColorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD87384A29B1024200DDCAF3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BD87384B29B102B400DDCAF3 /* ColorPaletteViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD87383E29B101EC00DDCAF3 /* ContentView.swift in Sources */,
+				BD87384E29B1039E00DDCAF3 /* ColorView.swift in Sources */,
+				BD87383E29B101EC00DDCAF3 /* MainView.swift in Sources */,
+				BD87384C29B102B400DDCAF3 /* ColorPaletteViewModel.swift in Sources */,
 				BD87383C29B101EC00DDCAF3 /* ColorPaletteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import SwiftUI
 struct ColorPaletteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView(colorExampleViewModel: ColorExampleViewModel())
         }
     }
 }
